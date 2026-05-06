@@ -175,3 +175,11 @@ git rev-list commit1..commit2 | xargs -n1 git grep <string>
 ```
 
 To search the entire history, use `git rev-list --all`.
+
+# Show modified files
+
+To find all files which were modified by a commit:
+
+```
+git diff --name-only <commit>
+```
